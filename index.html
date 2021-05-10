@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | preview card </title>
 
 </head>
@@ -13,25 +15,35 @@
 
   <div class="container">
     <div class="card">
+      <!--images-->
+      <div class="images">
+        <img class="desktop-image" src="images/image-header-desktop.jpg"></img>
+        <img class="mobile-image" src="images/image-header-mobile.jpg"></img>
+      </div>
+      
       <div class="content">
         <div class="title">
-          Get insights that help your business grow.
+          Get <span class="title-span">insights</span>  that help your business grow.
         </div>
         <div class="text">
           Discover the benefits of data analytics and make better decisions regarding revenue, customer
           experience, and overall efficiency.
         </div>
         <div class="metaData">
-          10k+ companies
-          314 templates
-          12m+ queries
+          <div class="col">
+            10k+ <span>companies</span>
+          </div>
+          <div class="col">
+            314 <span>templates</span>
+          </div>
+          <div class="col">
+            12m+ <span>queries</span>
+          </div>
         </div>
       </div>
-      <img class="image" src="images/image-header-desktop.jpg"></img>
-      <img class="image" src="images/image-header-mobile.jpg"></img>
+      
     </div>
-
-  </div>
+  </div><!--/container-->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Mutwakil Ahmed</a>.
